@@ -26,16 +26,18 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  overflow-y: scroll;
   font-size: 20px;
 }
 
 .preview-container {
   background-color: rgba(7, 27, 82, 1);
+   
 }
 .editor-container {
   margin-right: 10px;
   background-color: rgba(0, 128, 128, 1);
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 
 h3 {
@@ -45,22 +47,40 @@ h3 {
 
 textarea {
   width: 100%;
-  height: 300px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
+#editor {
+  white-space: pre-wrap;
+  height: 300px;           
+  border: 1px solid #ccc;  
+  overflow: auto;          
+  box-sizing: border-box;  
+  background-color: white;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
 #preview {
   white-space: pre-wrap;
-  border: 1px solid #ccc;
+  height: 300px;           
+  border: 1px solid #ccc;  
+  overflow: auto;          
+  box-sizing: border-box;  
   background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
 }
+
 
 #preview table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 #preview th, #preview td {
