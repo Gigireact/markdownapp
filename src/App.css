@@ -118,7 +118,6 @@ textarea {
   .editor-container,
   .preview-container {
     width: 100%;
-    max-width: 80%;
   }
 
 }
