@@ -101,6 +101,7 @@ textarea {
   .container {
     width: 95%;
     gap: 15px;
+    max-width: 80%;
   }
 }
 
@@ -110,12 +111,14 @@ textarea {
     align-items: center;
     width: 100%;
     padding: 0 10px; 
+    max-width: 80%;
+
   }
 
   .editor-container,
   .preview-container {
     width: 100%;
-    max-width: 450px;  
+    max-width: 80%;
   }
 
 }
@@ -125,6 +128,8 @@ textarea {
   #preview {
     height: 250px;
     font-size: 16px;
+    max-width: 80%;
+
   }
 
   h3 {
